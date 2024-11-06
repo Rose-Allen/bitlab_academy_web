@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поиск фильма</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 300px;
+        margin: 0 auto;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .time-select {
+        display: flex;
+        gap: 10px;
+      }
+      .time-select select {
+        width: 48%;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Поиск фильма</h2>
+      <form action="/search_movie" method="post">
+        <label for="movie_name">Название фильма:</label>
+        <input
+          type="text"
+          id="movie_name"
+          name="movie_name"
+          placeholder="Название фильма"
+          required
+        />
+
+        <label for="theater">Кинотеатры:</label>
+        <select id="theater" name="theater" required>
+          <option value="paramount">Кинотеатр Paramount City</option>
+          <option value="cinema_park">Кинотеатр Cinema Park</option>
+          <option value="kinoplexx">Кинотеатр Kinoplexx</option>
+          <!-- Добавьте другие кинотеатры по необходимости -->
+        </select>
+
+        <label>Время сеанса:</label>
+        <div class="time-select">
+          <select name="hour" required>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <!-- Добавьте другие часы по необходимости -->
+          </select>
+          <select name="minute" required>
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="45">45</option>
+          </select>
+        </div>
+
+        <button type="submit">Поиск Фильма</button>
+      </form>
+    </div>
+  </body>
+</html>

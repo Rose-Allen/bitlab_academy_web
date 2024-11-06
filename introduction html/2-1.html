@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма регистрации</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Форма регистрации</h2>
+    <form action="/submit_registration" method="post">
+      <table>
+        <tr>
+          <td>Имя</td>
+          <td>Фамилия</td>
+          <td>Логин</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="first_name" placeholder="Имя" required />
+          </td>
+          <td>
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Фамилия"
+              required
+            />
+          </td>
+          <td>
+            <input type="text" name="username" placeholder="Логин" required />
+          </td>
+        </tr>
+        <tr>
+          <td>Страна</td>
+          <td>Город</td>
+          <td>Улица</td>
+        </tr>
+        <tr>
+          <td>
+            <select name="country" required>
+              <option value="Казахстан">Казахстан</option>
+              <option value="Россия">Россия</option>
+              <option value="Беларусь">Беларусь</option>
+              <option value="Украина">Украина</option>
+              <!-- Добавьте другие страны по необходимости -->
+            </select>
+          </td>
+          <td>
+            <select name="city" required>
+              <option value="Алматы">Алматы</option>
+              <option value="Нур-Султан">Нур-Султан</option>
+              <option value="Шымкент">Шымкент</option>
+              <option value="Караганда">Караганда</option>
+            </select>
+          </td>
+          <td>
+            <input type="text" name="street" placeholder="Улица" required />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: center">
+            <button type="submit">Загрузить данные</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

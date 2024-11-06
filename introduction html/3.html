@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация студента</title>
+  </head>
+  <body>
+    <h2>Регистрация студента</h2>
+    <form action="/register_student" method="post">
+      <table>
+        <tr>
+          <td>Имя:</td>
+          <td>
+            <input
+              type="text"
+              name="first_name"
+              placeholder="Введите имя"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Фамилия:</td>
+          <td>
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Введите фамилию"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Отчество:</td>
+          <td>
+            <input
+              type="text"
+              name="middle_name"
+              placeholder="Введите отчество"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Родной город:</td>
+          <td>
+            <select name="hometown">
+              <option value="Алматы">Алматы</option>
+              <option value="Нур-Султан">Нур-Султан</option>
+              <option value="Шымкент">Шымкент</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Пол:</td>
+          <td>
+            <input type="radio" name="gender" value="Мужской" required />
+            Мужской <input type="radio" name="gender" value="Женский" /> Женский
+          </td>
+        </tr>
+        <tr>
+          <td>Дата рождения:</td>
+          <td><input type="date" name="birth_date" required /></td>
+        </tr>
+        <tr>
+          <td>Образование:</td>
+          <td>
+            <select name="education">
+              <option value="РФМШ г.Алматы">РФМШ г.Алматы</option>
+              <option value="Школа №1">Школа №1</option>
+              <option value="Школа №2">Школа №2</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Баллы ЕНТ:</td>
+          <td>
+            <input
+              type="number"
+              name="ent_score"
+              min="0"
+              max="140"
+              value="0"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <button type="submit">Зарегистрировать</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

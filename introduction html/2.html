@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма заказа бургеров</title>
+  </head>
+  <body>
+    <h2>Форма заказа бургеров</h2>
+    <form action="/submit_order" method="post">
+      <table>
+        <tr>
+          <td>Тип булочки:</td>
+          <td>
+            <select name="bun_type">
+              <option value="hamburger">Булочки для гамбургеров</option>
+              <option value="wholegrain">Цельнозерновые булочки</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Тип мяса:</td>
+          <td>
+            <select name="meat_type">
+              <option value="beef">Говядина</option>
+              <option value="chicken">Курица</option>
+              <option value="vegetarian">Вегетарианский</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Опции:</td>
+          <td>
+            <input type="checkbox" name="options" value="tomato" />
+            помидор<br />
+            <input type="checkbox" name="options" value="pickles" /> солёные
+            огурцы
+          </td>
+        </tr>
+        <tr>
+          <td>Адрес:</td>
+          <td>
+            <input
+              type="text"
+              name="address"
+              placeholder="Введите адрес"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Ф.И.О. Заказчика:</td>
+          <td>
+            <input
+              type="text"
+              name="customer_name"
+              placeholder="Введите Ф.И.О."
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Желаемое время доставки:</td>
+          <td><input type="time" name="delivery_time" /></td>
+        </tr>
+        <tr>
+          <td>Выбор бургера:</td>
+          <td>
+            <select name="burger_type">
+              <option value="hamburger">Гамбургер</option>
+              <option value="cheeseburger">Чизбургер</option>
+              <option value="chicken_burger">Чикенбургер</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <button type="submit">Заказать</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f3f3;
+    }
+    header {
+      background-color: #3b5998;
+      color: white;
+      padding: 15px 20px;
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logout {
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+    }
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    .left-section {
+      width: 25%;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    .left-section img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .left-section h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+    .left-section p {
+      font-size: 14px;
+      color: gray;
+    }
+    .left-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    .left-section ul li {
+      margin: 10px 0;
+    }
+    .left-section ul li a {
+      text-decoration: none;
+      color: #3b5998;
+      font-size: 14px;
+    }
+    .main-section {
+      width: 50%;
+      margin: 0 20px;
+    }
+    .post {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    .post h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .post img {
+      width: 100%;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+    .post p {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+    .post button {
+      background-color: #3b5998;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .right-section {
+      width: 25%;
+    }
+    .news-block {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    .news-block h3 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+    }
+    .news-item {
+      margin-bottom: 15px;
+    }
+    .news-item p {
+      margin: 0;
+      font-size: 14px;
+      color: gray;
+    }
+    .news-item span {
+      display: block;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>Facebook</div>
+    <a href="#" class="logout">Logout</a>
+  </header>
+  <div class="container">
+    <div class="left-section">
+      <img src="https://via.placeholder.com/250" alt="Profile Picture">
+      <h3>Ilyas Zhuanyshev</h3>
+      <p>— "No matter how good you are, someone is always going to be against you. But never let them be the limit of your success."</p>
+      <ul>
+        <li><a href="#">My Profile</a></li>
+        <li><a href="#">My Messages (3)</a></li>
+        <li><a href="#">My Videos</a></li>
+        <li><a href="#">My Photos</a></li>
+        <li><a href="#">My Groups</a></li>
+        <li><a href="#">My Games</a></li>
+      </ul>
+    </div>
+    <div class="main-section">
+      <div class="post">
+        <h3>Assylkhan Aldanazar</h3>
+        <img src="https://via.placeholder.com/600x300" alt="Post Image">
+        <p>Just recently, the guys graduated from the Java Standard Edition course. I am very happy, and good luck for them all!</p>
+        <button>View More</button>
+      </div>
+      <div class="post">
+        <h3>Aybek Bagit</h3>
+        <img src="https://via.placeholder.com/600x300" alt="Post Image">
+        <p>I am very angry that Real Madrid lost his captain! Good Luck Sergio Ramos, you are the best.</p>
+        <button>View More</button>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="news-block">
+        <h3>Latest News</h3>
+        <div class="news-item">
+          <p>Locatelli moves to Juventus</p>
+          <span>12:55 | Transfer cost - 40M euro</span>
+        </div>
+        <div class="news-item">
+          <p>PSG Signed Wijnaldum</p>
+          <span>11:22 | Georginio Wijnaldum goes to Paris</span>
+        </div>
+        <div class="news-item">
+          <p>Conor McGregor retires</p>
+          <span>11:12 | McGregor can not fight anymore</span>
+        </div>
+        <div class="news-item">
+          <p>Bitcoin raises up</p>
+          <span>10:49 | Bitcoin market cap raises up</span>
+        </div>
+        <div class="news-item">
+          <p>Coca Cola lost 4 billion dollars</p>
+          <span>09:58 | After Ronaldo's act, Coca Cola lost 4B</span>
+        </div>
+        <div class="news-item">
+          <p>BITLAB ACADEMY transform</p>
+          <span>09:42 | BITLAB transforms to university</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
